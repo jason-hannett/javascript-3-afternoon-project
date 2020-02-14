@@ -21,7 +21,7 @@ var carDetails = {
   Use object destructuring to save the property values from the object carDetails into new variables. 
 */
 
-//Code Here
+let {color, make, model, year} = carDetails
 
 
 
@@ -34,7 +34,7 @@ var carDetails = {
 */
 
 function greeting( obj ) {
-  //Code Here
+  let {firstName, lastName, title} = obj
   
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
@@ -52,8 +52,24 @@ function greeting( obj ) {
   Use object destructuring to save the property values to new variables.
   Sum up the values and return the total number.
 */
+// const obj = {
+//   utah: 300000,
+//   california: 1000000000,
+//   texas: 2000000,
+//   arizona: 3000000
+// }
 
-//Code Here
+// let utah = obj.utah
+// let california = obj.california
+
+// console.log(utah)
+
+
+function totalPopulation(obj){
+    const {utah, california, texas, arizona} = obj 
+    return utah + california + texas + arizona
+}
+ 
 
 
 
@@ -67,8 +83,14 @@ function greeting( obj ) {
   Push these new variables to an array and return the array. 
 */
 
-//Code Here
+function ingredients( obj ){
+  let array = []
+    const {carb, fat, protein} = obj
+    array.push(carb, fat, protein)
 
+    return array
+    
+}
 
 
 ////////// PROBLEM 5 //////////
@@ -85,7 +107,7 @@ function greeting( obj ) {
   Find the smallest number of the three and return that number.
 */
 
-//Code Here
+
 
 
 
